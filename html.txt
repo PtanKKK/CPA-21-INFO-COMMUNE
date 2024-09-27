@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Commune</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #suggestions div {
+            cursor: pointer;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        #suggestions div:hover {
+            background-color: #f0f0f0;
+        }
+        .info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recherche de Commune</h1>
+    <input type="text" id="commune-input" placeholder="Commencez à taper le nom de la commune" autocomplete="off">
+    <div id="suggestions"></div>
+
+    <div class="info">
+        <p><strong>Code INSEE : </strong><span id="insee-code"></span></p>
+        <p><strong>Bureau d'Ordre (BO) : </strong><span id="bo-output"></span></p>
+        <p><strong>Base : </strong><span id="base-output"></span></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
